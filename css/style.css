@@ -129,7 +129,6 @@ header a:hover{
 .pie{
     background-color: #1B4B66;
     padding: 2rem;
-    margin: -0.3125rem;
 }
 .pie-container{
     max-width: 110rem;
