@@ -6,14 +6,12 @@
 
 body{
     font-family: 'roboto', sans-serif;
-    margin: 2rem auto;
     background-color: rgb(235, 250, 255);
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 140rem;
+    align-items: stretch;
+    flex-wrap: nowrap;
 }
 
 h1{font-size: 3.5em;}
@@ -48,26 +46,10 @@ main{
 
 header{
     background-color: rgb(245,245,245);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-header .logo{
-    margin-right: auto;
-    padding: 1.5625rem;
-}
-
-header .container{
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
-header .nav{
-    display: flex-end;
-    flex-direction: row;
-    text-align: center;
-    padding: 1.5625rem;
 }
 
 .navbar{
@@ -79,7 +61,7 @@ header .nav{
 }
 
 header a{
-    padding: .3125rem .75rem;
+    margin: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     color:#1B4B66;
@@ -98,25 +80,24 @@ header a:hover{
 
 .card-horizontal{
     width: 20rem;
-    height: 25rem;
+    height: 33rem;
     border-radius: .5rem;
     background-color: rgb(255, 226, 231);
     box-shadow: .125rem .125rem .625rem rgba(128,128,128,0.166);
     margin-bottom: .3125rem;
 }
 
-.Card .container{
+.container-cards-5{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1%;
+    justify-content: space-evenly;
     text-align: center;
     padding: 15px;
 }
 
-.Card img{
-    width: 50%;
+.card img{
+    width: 200px;
 }
 
 .banner img{
@@ -124,38 +105,41 @@ header a:hover{
 }
 
 .sponsor {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.Sponsor-order {
     display: flex;
+    grid-gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    align-items: center;
 }
 
-.Card h2{
+.sponsor img{
+    width: 20%;
+}
+.Card-10 h2{
     justify-content: start;
-}
-
-.Card{
-    justify-content: center;
 }
 
 .pie{
     background-color: #1B4B66;
-    padding: 5rem 0;
-    width: auto;
-    justify-content: center;
+    padding: 2rem;
+    margin: -0.3125rem;
 }
-.footer .container{
-    margin: 0 auto;
-    max-width: 1000px;
+.pie-container{
+    max-width: 110rem;
 }
 
 .footer-row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -225,8 +209,12 @@ header a:hover{
     padding: 2%;
 }
 
+.Filtros{
+    display: flex;
+}
+
 .lista-de-opciones{
-    text-align: end;
+    display: flex;
 }
 
 .navegacion{
@@ -234,19 +222,23 @@ header a:hover{
     padding: 5%
 }
 
-.about-us .A1{
+.A{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
 }
 
-.about-us .A1 img{
+    .A img{
     height: auto;
     max-width: 20%;
 }
 
-.about-us .A1 p{
-    margin-left: 40rem ;
+.A p{
+    padding-left: 25%;
+    transform: translateY(-10px);
+    text-wrap: wrap;
 }
 
 .form{
@@ -362,55 +354,92 @@ header a:hover{
     align-items: stretch;
 }
 
-.Columna-productos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    transform: translateY(-35rem);
-    gap: 3.75rem;
-    border-radius: .5rem;
-    text-align: center;
-    background-color: rgb(255, 226, 231);
-    box-shadow: .125rem .125rem .625rem rgba(128,128,128,0.166);
-    margin: auto;
-}
-
-.Columna-productos img{
-    width: 60%;
-}
-
-.Columna-productos2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    transform: translateY(-25rem);
-    gap: 3.75rem;
-    border-radius: .5rem;
-    margin-bottom: .3125rem;
-    padding-left: 20%;
-    text-align: center;
-}
-
-.container{
+.contenedor-grid{
     width: 100%;
-    max-width: 105rem;
     margin: 20px auto;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto) ;
 }
 
-.Filtros{
-    padding-right: 5%;
+.contenedor-grid .lista-de-opciones{
+    grid-column-start: 2;
+    grid-column-end: -1;
 }
 
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+.contenedor-grid .Filtros{
+    grid-column: span 1;
 }
 
-.banner-conocenos img{
-    max-width: 100%;
+.contenedor-grid .navegacion{
+    grid-column: 2;
+}
+
+.Filtros img{
+    width: 50%;
+    height: 70%;
+}
+
+@media (max-width: 768px){ 
+    header {
+        flex-direction: column;
+    }
+    .banner{
+        display: none;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+    header a{
+        margin: 1.5625rem;
+    }
+
+@media (max-width: 600px){
+    header a{
+        margin: 0.6rem;
+    }
+}
+
+@media (max-width: 448px){
+    header a{
+        margin: 0.2rem;
+    }
+}
+
+@media (max-width: 385px){
+    header .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 524px){
+    .footer-links{
+        padding: 0;
+    }
+    .footer-links ul li a{
+        text-wrap: nowrap;
+    }
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pie-container{
+        margin: -0.5rem;
+    }
+}
+
+@media (max-width: 337px){
+    .pie-container{
+        margin: -0.5rem;
+    }
+}
+
+@media (max-width: 337px){
+
 }
