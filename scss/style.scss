@@ -1,0 +1,19 @@
+/***siempre se tiene que llamar primero todo lo que esta en utilities***/
+@import "./utilities/mixins";
+@import "./utilities/maps";
+@import "./utilities/variables";
+@import "./utilities/funciones";
+
+/*elementos de la carpeta base*/
+
+
+/***elementos del layout***/
+@import "./layout/main-index";
+@import "./layout/login";
+@import "./layout/footer";
+/*elementos de components*/
+
+/*elementos de mediaquerry*/
+@import "./layout/media/media768";
+@import "./layout/media/media524px";
+@import "./layout/media/media337px";

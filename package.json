@@ -1,0 +1,17 @@
+{
+  "name": "clase1",
+  "version": "1.0.0",
+  "description": "mi proyecto es una pagina para ventas de componentes de computadoras, ademas de otros elementos(que despues se irian agregando)\r esta pagina la estoy armando hasta ahora con HTML5, CSS3, y Bootstrap\r la mayoria de las paginas ya son responsive, y se iran actualizando mientras vaya conociendo nuevas tecnologias.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"sass --watch ./scss/style.scss:./css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,64 @@
+.pie{
+    background-color: $bg-color;
+    padding: 2rem;
+}
+
+.pie-container{
+    max-width: 110rem;
+}
+
+.footer-row {
+    @include flex(row,wrap,space-between,center,none);
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 .9375rem;
+}
+
+.footer-links h4 {
+    font-size: map-get($font-size, msd );
+    color: white;
+    margin-bottom: 1.5625rem;
+    font-weight: 500;
+    border-bottom: .125rem solid #00c3ff;
+    padding-bottom: .625rem;
+    display: inline-block;
+}
+.footer-links ul li a {
+    font-size: map-get($font-size, sm1 );
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: .9375rem;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: .5rem;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 .625rem .625rem 0;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: $bg-color
+}
+
+.ubicacion{
+    @include flex(row,wrap,none,center,none);
+}
+
+.ubicacion h4{
+    color: white;
+}

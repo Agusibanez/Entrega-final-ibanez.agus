@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(235, 250, 255);
+    text-transform: capitalize;
+    @include flex(column,nowrap,none,stretch,none);
+
+    h1{font-size: 3.5em;}
+    h2{font-size: 2.7em;}
+    h3{font-size: 2em;}
+    p{font-size: 1.25em;}
+    ul{list-style: none;}
+
+
+    .banner{
+        width: 100%;
+        @include flex(row,none,center,none,none);
+    }
+    
+        .banner img{
+            width: 50%;
+        }
+
+    main{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .card-horizontal{
+        width: 20rem;
+        height: 33rem;
+        border-radius: .5rem;
+        background-color: rgb(255, 226, 231);
+        box-shadow: .125rem .125rem .625rem rgba(128,128,128,0.166);
+        margin-bottom: .3125rem;
+    }
+    
+    .container-cards-5{
+        text-align: center;
+        padding: map-get($font-size, sm );
+        @include flex(row,wrap,space-evenly,none,none);
+    }
+    
+    .card img{
+        width: 200px;
+    }
+
+    button{
+        font-size: map-get($font-size, md );
+        font-weight: bold;
+        padding: .625rem 1.25rem;
+        border-radius: .625rem;
+        border: 5px solid map-get($paleta, color2 );
+        color: map-get($paleta, color2 );
+        background-color: white;
+    }
+    
+    button:hover{
+        background-color: $color-4;
+    }
+    
+    button:active{
+        background-color: $color-3;
+    }
+    .sponsor {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .Sponsor-order {
+        grid-gap: 20px;
+        @include flex(row,wrap,center,center,none);
+    }
+    
+    .sponsor img{
+        width: 20%;
+    }
+
+    .banner-conocenos{
+        max-width: 100%;
+        max-height: 100%;
+        @include flex(column,none,none,stretch,none);
+    }
+
+    .contenedor-grid{
+        width: 100%;
+        margin: 20px auto;
+        @include grid(repeat(3, 1fr), repeat(4,auto),none,none,1.25rem);
+    }
+    
+    .lista-de-opciones{
+        grid-column-start: 2;
+        grid-column-end: -1;
+    }
+
+    .contenedor-grid .Filtros{
+        grid-column: span 1;
+    }
+    
+    .navegacion{
+        @extend .lista-de-opciones
+    }
+
+    .filtros img{
+        width: 50%;
+        height: 70%;
+        margin-left: 15rem;
+    }
+
+    .preguntas{
+        height: 5%;
+        padding: 5%;
+        text-align: center;
+        margin: 1%;
+    }
+    
+    .preg{
+        padding: 2%;
+    }
+    
+    .Filtros{
+        @extend .lista-de-opciones
+    }
+    
+    .lista-de-opciones{
+        display: flex;
+    }
+    
+    .navegacion{
+        text-align: center;
+        padding: 5%
+    }
+    
+    .a{
+        @include flex(row,wrap,none,center,2%)
+    }
+    
+        .a img{
+        height: auto;
+        max-width: 20%;
+    }
+    
+    .a p{
+        padding-left: 25%;
+        transform: translateY(-10px);
+        text-wrap: wrap;
+    }
+    
+}
+

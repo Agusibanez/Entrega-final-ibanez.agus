@@ -1,0 +1,17 @@
+@media (max-width: 524px){
+    .footer-links{
+        padding: 0;
+    }
+    .footer-links ul li a{
+        text-wrap: nowrap;
+    }
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pie-container{
+        margin: -0.5rem;
+    }
+}
