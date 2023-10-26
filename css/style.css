@@ -22,7 +22,7 @@ body h1 {
   font-size: 3.5em;
 }
 body h2 {
-  font-size: 2.7em;
+  font-size: 2em;
 }
 body h3 {
   font-size: 2em;
@@ -34,16 +34,13 @@ body ul {
   list-style: none;
 }
 body .banner {
-  width: 100%;
+  max-width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: none;
-  justify-content: center;
-  align-items: none;
+  justify-content: none;
+  align-items: stretch;
   gap: none;
-}
-body .banner img {
-  width: 50%;
 }
 body main {
   width: 100%;
@@ -68,10 +65,10 @@ body .container-cards-5 {
   gap: none;
 }
 body .card img {
-  width: 200px;
+  width: 14.875rem;
 }
 body button {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
   padding: 0.625rem 1.25rem;
   border-radius: 0.625rem;
@@ -139,6 +136,9 @@ body .preguntas {
   padding: 5%;
   text-align: center;
   margin: 1%;
+}
+body .preguntas h1 {
+  font-size: 3.5em;
 }
 body .preg {
   padding: 2%;
@@ -275,7 +275,7 @@ body .a p {
 
 .pie {
   background-color: #1B4B66;
-  padding: 2rem;
+  padding: 0.8rem;
 }
 
 .pie-container {
@@ -295,7 +295,6 @@ body .a p {
   width: 25%;
   padding: 0 0.9375rem;
 }
-
 .footer-links h4 {
   font-size: 20px;
   color: white;
@@ -383,6 +382,10 @@ body .a p {
     margin: -0.5rem;
   }
 }
+body .preguntas h1 {
+  font-size: 2em;
+}
+
 @media (max-width: 337px) {
   .pie-container {
     margin: -0.5rem;

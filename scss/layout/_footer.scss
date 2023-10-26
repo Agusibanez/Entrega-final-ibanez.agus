@@ -1,6 +1,6 @@
 .pie{
     background-color: $bg-color;
-    padding: 2rem;
+    padding: 0.8rem;
 }
 
 .pie-container{
@@ -14,17 +14,16 @@
 .footer-links{
     width: 25%;
     padding: 0 .9375rem;
-}
-
-.footer-links h4 {
-    font-size: map-get($font-size, msd );
-    color: white;
-    margin-bottom: 1.5625rem;
-    font-weight: 500;
-    border-bottom: .125rem solid #00c3ff;
-    padding-bottom: .625rem;
-    display: inline-block;
-}
+        h4 {
+            font-size: map-get($font-size, msd );
+            color: white;
+            margin-bottom: 1.5625rem;
+            font-weight: 500;
+            border-bottom: .125rem solid #00c3ff;
+            padding-bottom: .625rem;
+            display: inline-block;
+        }
+    }
 .footer-links ul li a {
     font-size: map-get($font-size, sm1 );
     text-decoration: none;
