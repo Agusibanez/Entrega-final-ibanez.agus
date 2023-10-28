@@ -17,18 +17,39 @@
 </head>
 
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="../assets/img/Blue-Bird.jpg" alt="bluebird" width="50" height="50" class="d-inline-block align-text-top">
-            <span class="fs-4">Blue Bird</span>
-        </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">iniciar sesion</a></li>
-            <li class="nav-item"><a href="./ayuda.html" class="nav-link">ayuda</a></li>
-            <li class="nav-item"><a href="./catalogo.html" class="nav-link">catalogo</a></li>
-            <li class="nav-item"><a href="./conocenos.html" class="nav-link">conocenos</a></li>
-        </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="../assets/img/Blue-Bird.jpg" alt="bluebird" width="50" height="50" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="../index.html">Blue Bird</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/iniciarsesion.html">mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/ayuda.html">ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="../pages/catalogo.html" class="nav-link">catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="../pages/conocenos.html" class="nav-link">conocenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="Buscar">
+                    <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+            </nav>
     </header>
         <main>
         <section class="loguear">

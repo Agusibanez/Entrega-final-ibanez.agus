@@ -16,6 +16,16 @@ body{
     p{font-size: 1.25em;}
     ul{list-style: none;}
 
+.navbar-nav{
+    a{
+        text-align: center;
+        border-radius: 100%;
+        transition: all .5s ease;
+    }
+    a:hover{
+        background-color: $color-4;
+    }
+    }
 
     .banner{
             max-width: 100%;
@@ -39,7 +49,7 @@ body{
     .container-cards-5{
         text-align: center;
         padding: map-get($font-size, sm );
-        @include flex(row,wrap,space-evenly,none,none);
+        @include flex(row,wrap,space-evenly,none,.9375rem);
     }
     
     .card img{
@@ -52,8 +62,8 @@ body{
         padding: .625rem 1.25rem;
         border-radius: .625rem;
         border: 5px solid map-get($paleta, color2 );
-        color: map-get($paleta, color2 );
-        background-color: white;
+        color: white;
+        background-color: blue;
     }
     
     button:hover{
@@ -95,18 +105,8 @@ body{
         grid-column-end: -1;
     }
 
-    .contenedor-grid .Filtros{
-        grid-column: span 1;
-    }
-    
     .navegacion{
         @extend .lista-de-opciones
-    }
-
-    .filtros img{
-        width: 50%;
-        height: 70%;
-        margin-left: 15rem;
     }
 
     .preguntas{
@@ -122,11 +122,7 @@ body{
     .preg{
         padding: 2%;
     }
-    
-    .Filtros{
-        @extend .lista-de-opciones
-    }
-    
+
     .lista-de-opciones{
         display: flex;
     }
@@ -151,5 +147,30 @@ body{
         text-wrap: wrap;
     }
     
+    $product-list-padding: 20px;
+
+.product-list {
+    @include flex(column,none,none,flex-start,none);
+    .filter {
+    h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+        cursor: pointer;
+        margin-bottom: 5px;
+
+        &:hover {
+            background-color: $color-4;
+        }
+        }
+    }
+    }
+}
 }
 
