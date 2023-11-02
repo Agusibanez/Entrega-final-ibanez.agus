@@ -6,11 +6,15 @@
         font-size: 2.5rem;
     }
 
-    .Filtros{
+    .navegacion{
         display: none;
     }
 
     .lista-de-opciones{
-        height: 20px;
+        display: none;
+    }
+
+    .card{
+        width: 12rem !important;
     }
 }

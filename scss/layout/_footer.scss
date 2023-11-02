@@ -24,6 +24,7 @@
             display: inline-block;
         }
     }
+*//
 .footer-links ul li a {
     font-size: map-get($font-size, sm1 );
     text-decoration: none;
@@ -36,6 +37,10 @@
 .footer-links ul li a:hover{
     color: white;
     padding-left: .5rem;
+}
+
+.social-link{
+display: inline-block;
 }
 
 .social-link a{
