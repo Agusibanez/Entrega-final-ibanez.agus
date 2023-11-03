@@ -19,7 +19,7 @@ body {
   gap: none;
 }
 body h1 {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 body h2 {
   font-size: 2em;
@@ -204,18 +204,18 @@ body .sub-dropdown {
   position: relative;
   display: inline-block;
 }
+body .sub-dropdown:hover .sub-dropdown-content {
+  display: contents;
+}
 body .sub-dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  top: -0.625rem;
+  top: -10px;
   left: 0;
   z-index: 2;
-}
-body .sub-dropdown:hover .sub-dropdown-content {
-  display: block;
 }
 body .arrow {
   position: absolute;
@@ -232,6 +232,12 @@ body .rows {
 }
 body .col {
   flex: 0 0 30%;
+}
+body .col-1 {
+  flex: none;
+}
+body .about-us .a h1 {
+  font-size: 2em;
 }
 
 .form {
