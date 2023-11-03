@@ -211,6 +211,13 @@ body{
   transform: translateY(-50%);
 }
 
+.rows{
+    @include flex(row,wrap,space-around,none,1.25rem);
+}
+
+.col{
+    flex: 0 0 30%;
+}
 
 }
 
